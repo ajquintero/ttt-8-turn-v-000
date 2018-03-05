@@ -34,11 +34,10 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
   def turn(board)
     puts "Please enter 1-9:"
-    index = gets.strip
+    input = gets.strip
 
-    if valid_move? == true && position_taken? == false
-      move
-    else
-      puts "Please enter a valid input"
+    until valid_move?(board, index)
+      puts "Please enter 1-9:"
+      input = gets.strip
     end
   end
