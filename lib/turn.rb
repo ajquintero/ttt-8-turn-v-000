@@ -41,5 +41,3 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     else
       puts "Please enter a valid input"
     end
-  end
-end
