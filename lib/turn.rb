@@ -40,4 +40,5 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       puts "Please enter 1-9:"
       input = gets.strip
     end
+    move(board, input)
   end
