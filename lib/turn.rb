@@ -36,10 +36,12 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     puts "Please enter 1-9:"
     input = gets.strip
     input = input_to_index(input)
-    if valid_move? == true && position_taken? == false
+    valid = valid_move?(board, index)
+    if valid_move? == true
       move(board, index, charachter = "X")
     else
-      puts "Please enter a valid input"
+      puts "Please enter a valid input:"
+      input = gets.strip
     end
 
     # until valid_move?(board, index)
