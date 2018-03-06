@@ -40,4 +40,5 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       move(board, index, character = "X")
       display_board(board)
     else turn(board)
+    end
   end
